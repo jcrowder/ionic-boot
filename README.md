@@ -9,9 +9,7 @@ can be a daunting task if you are not immersed in the
 ## Install node, cordova, ionic
 [Installing Ionic and its Dependencies](http://ionicframework.com/docs/guide/installation.html)
 
-```
 Install node
-```
 
 ```
 $ npm install -g cordova
@@ -27,7 +25,9 @@ $ npm install -g ionic
 Code
 ```
 
-## Initialize the app
+## Getting Started
+
+### Initialize the app
 
 ```
 $ ionic start IonicGram
@@ -38,6 +38,17 @@ $ ionic platform ios
 
 $ ionic platform android
 ```
+
+### Add hooks
+
+Add hook to ensure that anyone checking out this project will have the proper cordova plugins.
+
+[Cordova Hooks for Plugins](http://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/)
+
+### Share
+
+
+!(docs/images/app-starter-ios.png)
 
 ## Frame In
 
