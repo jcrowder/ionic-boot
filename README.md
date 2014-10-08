@@ -47,8 +47,7 @@ Add hook to ensure that anyone checking out this project will have the proper co
 
 ### Share
 
-
-!(docs/images/app-starter-ios.png)
+![Starter App Screenshot](docs/images/app-starter-ios.png)
 
 ## Frame In
 
