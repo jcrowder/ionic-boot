@@ -2,8 +2,8 @@ ionic-boot
 ==========
 
 # Introduction
-Creating a high-performance, cross-platform mobile app with a full fidelity native look and feel
-can be a daunting task if you are not immersed in the 
+Creating a high-performance, cross-platform mobile app with a high-fidelity native look and feel can be
+an intimidating task.
 
 # Set Up
 ## Install node, cordova, ionic
@@ -50,6 +50,14 @@ Add hook to ensure that anyone checking out this project will have the proper co
 ![Starter App Screenshot](docs/images/app-starter-ios.png)
 
 ## Frame In
+
+Application Layout
+
+[Global Side Menu]
+
+[Tabbed Profile View]
+ tabs
+
 
 ## Online
 

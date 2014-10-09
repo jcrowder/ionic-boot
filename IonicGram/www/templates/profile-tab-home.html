@@ -1,0 +1,13 @@
+<ion-view title="Profile Home">
+  <ion-content class="padding">
+    <h1>{{instagramProfileData.username}}</h1>
+    {{instagramProfileData.full_name}}
+
+    <div class="row">
+      <div class="col">{{instagramProfileData.counts.media}} posts</div>
+      <div class="col">{{instagramProfileData.counts.followed_by}} followers</div>
+      <div class="col">{{instagramProfileData.counts.follows}} following</div>
+    </div>
+
+  </ion-content>
+</ion-view>

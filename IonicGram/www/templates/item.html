@@ -1,0 +1,24 @@
+<ion-view title="Item">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content>
+  	<img class="full-image" src="{{igItem.data.images.standard_resolution.url}}" />
+  	
+  	<p>
+  	{{igItem.data.caption.text}}
+  	</p>
+  	
+  	<p>
+  	 likes {{igItem.data.likes.count}}
+  	 <span ng-repeat="like in igItem.data.likes.data">{{like.username}}</span>
+  	</p>
+  	
+  	<ion-list>
+      <ion-item ng-repeat="comment in igItem.data.comments.data">
+        {{comment.text}}
+      </ion-item>
+     </ion-list>
+  	
+  </ion-content>
+</ion-view>
