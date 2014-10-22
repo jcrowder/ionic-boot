@@ -30,12 +30,14 @@ angular.module('ionicgram.controllers', [])
 
 .controller('ItemController', function($scope, $rootScope, $stateParams, Instagram) {
 	$scope.igItem = {};
+	$scope.item = {};
 	
 	console.log("item id: " + $stateParams.itemId);
 	
 	$scope.loadItemData = function() {
 		Instagram.getMedia($stateParams.itemId).success(function(data) {
 			$scope.igItem = data;
+			$scope.item = data.data;
 		});
 	};
 	

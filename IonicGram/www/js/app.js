@@ -73,8 +73,8 @@ angular.module('ionicgram', [ 'ionic', 'ionicgram.controllers', 'ionicgram.servi
 		url : '/account',
 		views : {
 			'profile-account' : {
-				templateUrl : 'templates/profile-tab-account.html',
-				controller : 'ProfileAccountController'
+				templateUrl : 'templates/account-home.html',
+				controller : 'AccountHomeController'
 			}
 		}
 	})

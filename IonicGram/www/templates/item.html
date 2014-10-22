@@ -3,22 +3,39 @@
     <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
   <ion-content>
-  	<img class="full-image" src="{{igItem.data.images.standard_resolution.url}}" />
-  	
-  	<p>
-  	{{igItem.data.caption.text}}
-  	</p>
-  	
-  	<p>
-  	 likes {{igItem.data.likes.count}}
-  	 <span ng-repeat="like in igItem.data.likes.data">{{like.username}}</span>
-  	</p>
-  	
-  	<ion-list>
-      <ion-item ng-repeat="comment in igItem.data.comments.data">
-        {{comment.text}}
-      </ion-item>
-     </ion-list>
+  
+      <div class="list card">
+        <div class="item item-avatar">
+          <img src="{{item.user.profile_picture}}" />
+          <h2>{{item.user.username}}</h2>
+        </div>
+        <div class="item item-body">
+          <a href="#/app/item/{{item.id}}">
+            <img class="full-image" src="{{item.images.standard_resolution.url}}" />
+          </a>
+          <p>{{item.caption.text}}</p>
+          <p>
+            <a href="#" class="subdued">{{item.likes.count}} Like</a>
+            <a href="#" class="subdued">{{item.comments.count}} Comments</a>
+          </p>
+        </div>
+        <div class="item tabs tabs-secondary tabs-icon-left">
+          <a class="tab-item" href="#">
+            <i class="icon ion-thumbsup"></i> Like
+          </a>
+          <a class="tab-item" href="#">
+            <i class="icon ion-chatbox"></i> Comment
+          </a>
+          <a class="tab-item" href="#">
+            <i class="icon ion-share"></i> Share
+          </a>
+        </div>
+       	<div class="item item-body"">
+          <div class="comment-list-item" ng-repeat="comment in item.comments.data">
+            {{comment.text}}
+          </div>
+        </div>
+      </div>
   	
   </ion-content>
 </ion-view>
