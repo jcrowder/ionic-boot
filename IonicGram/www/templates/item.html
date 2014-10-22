@@ -30,10 +30,10 @@
             <i class="icon ion-share"></i> Share
           </a>
         </div>
-       	<div class="item item-body"">
-          <div class="comment-list-item" ng-repeat="comment in item.comments.data">
-            {{comment.text}}
-          </div>
+        <div class="item item-avatar" ng-repeat="comment in item.comments.data">
+          <img src="{{comment.from.profile_picture}}" />
+          <h2>{{comment.from.username}}</h2>
+          <p>{{comment.text}}</p>
         </div>
       </div>
   	
